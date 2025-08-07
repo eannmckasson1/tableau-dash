@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Embedded Tableau Dashboard</title>
+
+  <!-- Tableau Embedding API -->
+  <script type="module" src="https://prod-useast-a.online.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+</head>
+<body style="margin: 0; padding: 0;">
+
+  <h2 style="text-align: center; padding: 20px;">My Private Tableau Dashboard</h2>
+
+  <div style="display: flex; justify-content: center;">
+    <tableau-viz 
+      id='tableau-viz' 
+      src='https://prod-useast-a.online.tableau.com/t/recreationalrealty/views/FinalMapforNotion/MapforNotion' 
+      width='1200' 
+      height='800' 
+      hide-tabs 
+      toolbar='bottom'>
+    </tableau-viz>
+  </div>
+
+  <div>
+  </div>
+
+</body>
+</html>
